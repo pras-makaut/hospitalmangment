@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+<div class="col-sm-12">
+    <div class="card-deck card-format">
+        <% for(let i=0 ;i< doctorsArray.length ;i++){ %>
+          <div class="card col-sm-3">
+              <img class="card-img-top" src="images/doctor1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-title card-title-name"><%= doctorsArray[i].Nmae %></p>
+                <i class="fas fa-mobile-alt fas-inf"> <span class="email-inf"><%=doctorsArray[i].Specialization %></i>
+                <i class="fas fa-envelope fas-inf"><span class="email-inf">info@demolink.org</span> </i>
+              </div>
+            </div>
+        <% } %>
+      </div>
+</div>
+<%- include('footer'); -%>
